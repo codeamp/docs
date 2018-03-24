@@ -24,3 +24,4 @@ RUN git clone https://github.com/digitalcraftsman/hugo-material-docs
 RUN mv hugo-material-docs $APP_PATH/themes/hugo-material-docs
 
 EXPOSE 1313
+CMD ["hugo", "server", "--bind", "0.0.0.0"]
